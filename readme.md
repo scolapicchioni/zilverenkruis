@@ -79,4 +79,4 @@
 - http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
 - https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
 - https://www.w3resource.com/csharp-exercises/
-- https://code.org/student/university
+- https://studio.code.org/courses
