@@ -44,6 +44,8 @@
     - Output
     - Pass By Value / Pass By Reference
     - Variable Scope
+- Exceptions
+    - try / catch
 
 ### Study Material:
 - http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
