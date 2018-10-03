@@ -69,7 +69,8 @@
     - https://www.w3resource.com/csharp-exercises/for-loop/index.php
     - https://www.w3resource.com/csharp-exercises/string/index.php
     - https://www.w3resource.com/csharp-exercises/function/index.php
-
+    - https://courses.edx.org/courses/course-v1:DelftX+ScratchX+3T2016/course/
+    - https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
 ## Resources
 
 - https://repl.it/
@@ -78,3 +79,4 @@
 - http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
 - https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
 - https://www.w3resource.com/csharp-exercises/
+- https://code.org/student/university
