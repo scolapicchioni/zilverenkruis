@@ -9,6 +9,19 @@
 - Variables
 - If / Else
 
+## Day 02
+
+- If / Else (reprise)
+- Loops
+    - While
+    - Do / While
+    - For
+- Methods
+    - Definition
+    - Input Parameters
+    - Output
+    - Pass By Value / Pass By Reference
+    - Variable Scope
 
 ## Resources
 
