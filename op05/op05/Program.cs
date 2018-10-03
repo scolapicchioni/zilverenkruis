@@ -14,16 +14,15 @@ namespace op05 {
             if (computerNumber == userNumber) {
                 //If yes, say "you won!"
                 Console.WriteLine("YOU WOOOOOOOON!!!!");
-            } else {
+            } else if (userNumber > computerNumber) {
                 //If not
                 //Test if the user is too high
-                if (userNumber > computerNumber) {
-                    //If yes, say "Too high!"
-                    Console.WriteLine("Too high!");
-                } else {
-                    //If not, say "Too low"
-                    Console.WriteLine("Too Low!");
-                }
+                
+                //If yes, say "Too high!"
+                Console.WriteLine("Too high!");
+            } else {
+                //If not, say "Too low"
+                Console.WriteLine("Too Low!");
             }
             Console.WriteLine("The computer generated a " + computerNumber);
             Console.ReadLine();
