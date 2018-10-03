@@ -15,6 +15,31 @@ namespace op06 {
                 //counter += 1;
                 counter++;
             }
+
+            counter = 0;
+            do {
+                counter++;
+            } while (counter < 10);
+
+
+            //initialization
+            //int counter = 0;
+            //test
+            while (counter < 10) 
+            {
+                //repeat whatever
+
+                //increment, or change the value of your condition
+            }
+
+            for (counter = 0 ; counter < 10; counter++) 
+            {
+                //repeat whatever
+                Console.WriteLine(counter);
+            }
+            
+
+
             Console.WriteLine("Bye!");
 
 
