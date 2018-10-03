@@ -40,10 +40,27 @@ namespace op09 {
         }
 
         private static int AskNumberToUser() {
-            Console.Write("Please enter a number between 1 and 100: ");
-            string userInput = Console.ReadLine();
-            int userNumber = int.Parse(userInput);
-            return userNumber;
+            while (true) {
+                Console.Write("Please enter a number between 1 and 100: ");
+
+                //return int.Parse(Console.ReadLine());
+
+                string userInput = Console.ReadLine();
+                try {
+                    int userNumber = int.Parse(userInput);
+                    if (userNumber < 1 || userNumber > 100) {
+                        Console.WriteLine("Between 1 and 100, please!!");
+                    } else {
+                        return userNumber;
+                    }                    
+                } catch (FormatException) {
+                    Console.WriteLine("I SAID NUMBER!!!");
+                } catch (OverflowException) {
+                    Console.WriteLine("Between " + int.MinValue + " and " + int.MaxValue + ", please!!");
+                }
+            }
+            
+            
         }
 
         private static int GenerateRandomNumber() {
