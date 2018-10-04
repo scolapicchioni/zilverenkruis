@@ -108,7 +108,7 @@
 |2|9|6|
 |8|5|3|
 
-2. Implement the Hangman game
+2. Implement the Hangman game (https://www.wikihow.com/Play-Hangman)
 
 ## Resources
 
