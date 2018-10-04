@@ -86,8 +86,10 @@
 
 ### Study Material:
 - http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
+    - Chapter B.4
     - Chapter 10
 - https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
+    - Part 2 - Chapter 21
     - Part 1 - Chapter 7
 
 ### Excercises:
