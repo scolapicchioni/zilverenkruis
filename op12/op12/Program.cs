@@ -14,6 +14,14 @@ namespace op12 {
         //Add: Adds a number at the end of the list
         //bonus points: if the list is full, double the size
 
+        //Count: returns how many items are in the list
+
+        //GetItemAt: returns the item at a specified position
+        
+        //Print: prints the content of the list to the Console
+
+        //////////////////////////////////////////////////////////
+
         //Remove: removes a number from the end of the list
 
         //InsertAt: inserts a number at a specified position
@@ -22,12 +30,6 @@ namespace op12 {
 
         //IndexOf: returns the position of a specified item (-1 if not present)
 
-        //GetItemAt: returns the item at a specified position
-
         //Contains: returns true if a specified item is found
-
-        //Count: returns how many items are in the list
-
-        //Print: prints the content of the list to the Console
     }
 }

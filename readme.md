@@ -99,6 +99,17 @@
 - https://courses.edx.org/courses/course-v1:DelftX+ScratchX+3T2016/course/
 - https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
 
+1.	Write a program that fills an array with dimension 3 x 3 with random numbers between 1 and 9. Each random number may only occur once in the array.
+	The following array shows a valid solution.
+
+| | | |
+|---|---|---|
+|7|4|1|
+|2|9|6|
+|8|5|3|
+
+2. Implement the Hangman game
+
 ## Resources
 
 - https://repl.it/
