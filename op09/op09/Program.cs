@@ -51,20 +51,21 @@ namespace op09 {
                 try {
                     int userNumber = int.Parse(userInput);
                     if (userNumber < 1 || userNumber > 100) {
-                        Console.WriteLine("Between 1 and 100, please!!");
+                        throw new OverflowException("It must be between 1 and 100!");
                     } else {
                         return userNumber;
                     }
                 } catch (SqlException ex) {
-                    
+                    Console.WriteLine(ex.LineNumber);
                 } catch (FormatException ex) {
-
                     Console.WriteLine("I SAID NUMBER!!! " + ex.Message);
                 } catch (OverflowException ex) {
                     //Console.WriteLine(ex.StackTrace); 
-                    Console.WriteLine("Between " + int.MinValue + " and " + int.MaxValue + ", please!!");
+                    Console.WriteLine("Between 1 and 100, please!!");
                 } catch (Exception ex) {
                     Console.WriteLine(ex.GetType().Name);
+                } finally {
+
                 }
             }
             
