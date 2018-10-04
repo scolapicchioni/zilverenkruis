@@ -3,33 +3,31 @@
 namespace op12 {
     class Program {
         static void Main(string[] args) {
-            int[] list = new int[10];
+            MyCollection c1 = new MyCollection();
+            MyCollection c2 = new MyCollection();
+            MyCollection c3 = new MyCollection();
+            c1.Add(22);
+            c2.Add(33);
+            c3.Add(44);
+            c1.Add(111);
 
-            Add(22);
-            Console.WriteLine(list[0]); //22
-            Add(123);
-            Console.WriteLine(list[1]); //123
+            Console.WriteLine(c1.listOfTheCollection[0]); //22
+            c1.Add(123);
+            Console.WriteLine(c1.listOfTheCollection[2]); //123
+
+            for (int i = 0; i < 100; i++) {
+                c1.Add(i);
+            } 
+
+            int x = c1.Count();
+
+            int theSecondItem = c1.GetItemAt(1);
+
+            c1.Print();
+
+            Console.ReadLine();
         }
 
-        //Add: Adds a number at the end of the list
-        //bonus points: if the list is full, double the size
-
-        //Count: returns how many items are in the list
-
-        //GetItemAt: returns the item at a specified position
         
-        //Print: prints the content of the list to the Console
-
-        //////////////////////////////////////////////////////////
-
-        //Remove: removes a number from the end of the list
-
-        //InsertAt: inserts a number at a specified position
-
-        //RemoveAt: removes an item at a specified position
-
-        //IndexOf: returns the position of a specified item (-1 if not present)
-
-        //Contains: returns true if a specified item is found
     }
 }
