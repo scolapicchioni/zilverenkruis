@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 
 namespace op09 {
     class Program {
@@ -19,6 +20,7 @@ namespace op09 {
             Console.ReadLine();
         }
 
+        //signature
         private static bool Compare(int computerNumber, int userNumber) {
             bool guessed = false;
             if (computerNumber == userNumber) {
@@ -52,11 +54,17 @@ namespace op09 {
                         Console.WriteLine("Between 1 and 100, please!!");
                     } else {
                         return userNumber;
-                    }                    
-                } catch (FormatException) {
-                    Console.WriteLine("I SAID NUMBER!!!");
-                } catch (OverflowException) {
+                    }
+                } catch (SqlException ex) {
+                    
+                } catch (FormatException ex) {
+
+                    Console.WriteLine("I SAID NUMBER!!! " + ex.Message);
+                } catch (OverflowException ex) {
+                    //Console.WriteLine(ex.StackTrace); 
                     Console.WriteLine("Between " + int.MinValue + " and " + int.MaxValue + ", please!!");
+                } catch (Exception ex) {
+                    Console.WriteLine(ex.GetType().Name);
                 }
             }
             

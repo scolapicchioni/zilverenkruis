@@ -105,6 +105,9 @@ namespace op08 {
         static void Method02() {
             Console.WriteLine("Method 02");
         }
+
+
+
     }
 
     //not here!!!

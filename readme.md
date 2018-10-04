@@ -71,8 +71,32 @@
     - https://www.w3resource.com/csharp-exercises/for-loop/index.php
     - https://www.w3resource.com/csharp-exercises/string/index.php
     - https://www.w3resource.com/csharp-exercises/function/index.php
-    - https://courses.edx.org/courses/course-v1:DelftX+ScratchX+3T2016/course/
-    - https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
+- https://courses.edx.org/courses/course-v1:DelftX+ScratchX+3T2016/course/
+- https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
+
+## Day 03
+
+### Concepts:
+
+- Exceptions
+    - try / catch
+    - finally
+    - throw
+- Arrays
+
+### Study Material:
+- http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
+    - Chapter 10
+- https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
+    - Part 1 - Chapter 7
+
+### Excercises:
+
+- https://www.w3resource.com/csharp-exercises/
+    - https://www.w3resource.com/csharp-exercises/array/index.php
+- https://courses.edx.org/courses/course-v1:DelftX+ScratchX+3T2016/course/
+- https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
+
 ## Resources
 
 - https://repl.it/
