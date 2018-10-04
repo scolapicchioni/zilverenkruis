@@ -12,6 +12,7 @@ namespace op12 {
         }
 
         //Add: Adds a number at the end of the list
+        //bonus points: if the list is full, double the size
 
         //Remove: removes a number from the end of the list
 
