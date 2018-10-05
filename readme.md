@@ -114,7 +114,7 @@
 
 ### Concepts:
 
-- Object Oriented Software Constructions
+- Object Oriented Software Construction
     - Encapsulation
     - Classes vs Objects
     - Properties
