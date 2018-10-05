@@ -110,6 +110,36 @@
 
 2. Implement the Hangman game (https://www.wikihow.com/Play-Hangman)
 
+## Day 04
+
+### Concepts:
+
+- Object Oriented Software Constructions
+    - Encapsulation
+    - Classes vs Objects
+    - Properties
+    - Methods
+    - public vs private
+
+### Study Material:
+- http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
+    - Chapter 9
+    - Chapter 11
+    - Chapter 12
+    - Chapter 13
+- https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
+    - Part 2 - Chapter 8
+    - Part 2 - Chapter 9
+    - Part 2 - Chapter 10
+- https://bookboon.com/en/object-oriented-programming-using-c-sharp-ebook
+
+
+### Excercises:
+
+-  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx
+- https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-7-more-on-classes.aspx
+- https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
+
 ## Resources
 
 - https://repl.it/
@@ -117,5 +147,8 @@
 - https://docs.microsoft.com/en-gb/dotnet/
 - http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
 - https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
+- https://bookboon.com/en/object-oriented-programming-using-c-sharp-ebook
 - https://www.w3resource.com/csharp-exercises/
 - https://studio.code.org/courses
+- https://www.juanantonioripoll.es/practice-exercises-c-sharp/
+
