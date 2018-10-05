@@ -120,6 +120,7 @@
     - Properties
     - Methods
     - public vs private
+    - Composition
 
 ### Study Material:
 - http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
@@ -139,6 +140,26 @@
 -  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx
 - https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-7-more-on-classes.aspx
 - https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
+
+1.	Create three classes, Student, Teacher and Course.
+2.	A student has:
+    -	Name.
+    -	Number
+    -	CurrentlyFollowingCourse of type Course.
+3.	A teacher has:
+    -	Name
+    -	Salary
+    -	CurrentlyTeachingCourse of type Course
+4.	Create constructors for all your classes which take all the property values as arguments.
+5.	Create a Console application which allows the user to:
+    -	Add up to 10 Students with a Course.
+    -	Add up to 10 Teachers with a Course.
+    -	Initialize the classes with these values accordingly.
+6.	Reuse existing Course objects if the name of the Course matches an earlier created Course.
+
+EVALUATION:
+
+https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29646
 
 ## Resources
 
