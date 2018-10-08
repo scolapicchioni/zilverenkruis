@@ -1,6 +1,6 @@
 # Zilveren Kruis Achmea (Createment)
 
-## Day 01
+## Day 01 (02/10/2018)
 
 ### Concepts:
 
@@ -29,7 +29,7 @@
     - AutoGraded C# Tutorial 3
 
     
-## Day 02
+## Day 02 (03/10/2018)
 
 ### Concepts:
 
@@ -74,7 +74,7 @@
 - https://courses.edx.org/courses/course-v1:DelftX+ScratchX+3T2016/course/
 - https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
 
-## Day 03
+## Day 03 (04/10/2018)
 
 ### Concepts:
 
@@ -110,7 +110,7 @@
 
 2. Implement the Hangman game (https://www.wikihow.com/Play-Hangman)
 
-## Day 04
+## Day 04 (05/10/2018)
 
 ### Concepts:
 
@@ -162,7 +162,7 @@ EVALUATION:
 https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29646
 
 
-## Day 5
+## Day 5 (08/10/2018)
 
 ### Concepts:
 
