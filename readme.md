@@ -198,8 +198,10 @@ https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29646
     
 
 ### Study Material:
+- https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
+    - Part 2 - Chapter 11
 - https://bookboon.com/en/object-oriented-programming-using-c-sharp-ebook
-    - Chapter 10
+    - Chapter 03
 
 ### Excercises:
 
