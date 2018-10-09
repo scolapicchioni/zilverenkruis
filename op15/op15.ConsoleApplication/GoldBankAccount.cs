@@ -8,8 +8,10 @@ namespace op15.ConsoleApplication {
 
         }
 
-        public void Withdraw(decimal amount) {
+        public override void Withdraw(decimal amount) {
             Balance -= amount;
         }
+        //add a double property Interest (get and set)
+        public double Interest { get; set; }
     }
 }

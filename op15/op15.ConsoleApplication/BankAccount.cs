@@ -28,7 +28,7 @@ namespace op15.ConsoleApplication {
             Balance += amount;
         }
         
-        public void Withdraw(decimal amount) {
+        public virtual void Withdraw(decimal amount) {
             if (amount > Balance) {
                 amount = Balance;
             }
