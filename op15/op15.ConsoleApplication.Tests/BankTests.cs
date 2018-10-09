@@ -12,7 +12,7 @@ namespace op15.ConsoleApplication.Tests {
             //b1.Name = "test";
 
             //WhenOpeningAnAccount
-            BankAccount account = b1.OpenAccount();
+            BankAccount account = b1.OpenAccount(1);
             string expected = "tes1";
             string actual = account.Id;
             

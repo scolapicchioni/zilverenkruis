@@ -185,6 +185,30 @@ https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29646
 
 - https://www.youtube.com/watch?v=BSaAMQVq01E
 
+
+## Day 6 (09/10/2018)
+
+### Concepts:
+
+- Object Orientation
+    - Inheritance (`:`)
+    - Polymorphism (`virtual` / `override`)
+    - Constructors (`base()`)
+    - UpCasting / DownCasting (`(cast)` / `is` / `as`)
+    
+
+### Study Material:
+- https://bookboon.com/en/object-oriented-programming-using-c-sharp-ebook
+    - Chapter 10
+
+### Excercises:
+
+-  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx
+- https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-7-more-on-classes.aspx
+- https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
+
+
+
 ## Resources
 
 - https://repl.it/

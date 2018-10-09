@@ -12,9 +12,15 @@ namespace op15.ConsoleApplication {
 
         private int counter;
         
-        public BankAccount OpenAccount() {
+        public BankAccount OpenAccount(int type) {
             string id = Name.Substring(0, 3) + ++counter ;
-            BankAccount ba = new BankAccount(id);
+            BankAccount ba;
+
+            if (type == 1) {
+                 ba = new BankAccount(id);
+            } else {
+                ba = new GoldBankAccount(id);
+            }
             return ba;
         }
 

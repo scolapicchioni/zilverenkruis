@@ -21,7 +21,7 @@ namespace op15.ConsoleApplication {
 
         //private decimal balance;
         public decimal Balance {
-            get; private set;
+            get; protected set;
         }
 
         public void Deposit(decimal amount) {
@@ -29,8 +29,9 @@ namespace op15.ConsoleApplication {
         }
         
         public void Withdraw(decimal amount) {
-            if (amount > Balance)
+            if (amount > Balance) {
                 amount = Balance;
+            }
             Balance -= amount;
         }
     }
