@@ -9,7 +9,6 @@ namespace op18.ConsoleApp {
             Label l1 = new Label();
             l1.Top = 10;
             l1.Left = 3;
-
             l1.BackgroundColor = ConsoleColor.DarkGray;
             l1.ForegroundColor = ConsoleColor.Yellow;
             l1.Text = "What is your name?";
@@ -21,7 +20,6 @@ namespace op18.ConsoleApp {
             t1.Left = 25;
             t1.BackgroundColor = ConsoleColor.DarkBlue;
             t1.ForegroundColor = ConsoleColor.DarkYellow;
-            t1.Text = "";
             Controls[1] = t1;
 
             Label l2 = new Label();
