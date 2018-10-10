@@ -15,11 +15,11 @@ namespace op17 {
             return $"Hi, my name is {Name} {Surname} and my StudentId is {StudentId}";
         }
 
-        public Student() {
+        public Student() : base("",""){
             Console.WriteLine("DEFAULT Constructor of a new Student");
         }
 
-        public Student(string surname, string address)/* : base("", surname)*/ {
+        public Student(string surname, string address) : base("", surname) {
             Console.WriteLine("Constructor with 2 params of a new Student");
             Address = address;
         }

@@ -60,6 +60,7 @@ namespace op17 {
 
 
             //Person p = new Person("Mario", "Super");
+            Person p = new Person();
 
             Student student = new Student("Princess", "Peach");
 

@@ -8,9 +8,9 @@ namespace op17 {
         public string Surname { get; set; }
         public string Address { get; set; }
 
-        public Person() {
-            Console.WriteLine("DEFAULT Constructor of a new Person");
-        }
+        //public Person() {
+        //    Console.WriteLine("DEFAULT Constructor of a new Person");
+        //}
 
         public Person(string name, string surname) {
             Console.WriteLine("Constructor with 2 params of a new Person");

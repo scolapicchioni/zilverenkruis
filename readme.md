@@ -210,6 +210,22 @@ https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29646
 - https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming
 
 
+## Day 7 (10/10/2018)
+
+### Concepts:
+
+- Object Orientation
+    - Abstract classes and methods (`abstract`)
+
+### Study Material:
+- https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
+    - Part 2 - Chapter 11
+- https://bookboon.com/en/object-oriented-programming-using-c-sharp-ebook
+    - Chapter 03
+
+### Excercises:
+-  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx
+- https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-7-more-on-classes.aspx
 
 ## Resources
 
