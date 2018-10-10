@@ -5,7 +5,7 @@ namespace op15.ConsoleApplication {
         static void Main(string[] args) {
             //make a Bank
             Bank rabo = new Bank("Rabobank");
-
+            
             //ask the bank to open an account of type BankAccount
             BankAccount account1 = rabo.OpenAccount(1);
             //withdraw 100 

@@ -3,9 +3,26 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace op18.UIComponents {
-    public class TextBox : Control{
+    public class TextBox : Control {
         public override void Draw() {
+            drawBorder();
 
+            Console.BackgroundColor = BackgroundColor;
+            Console.ForegroundColor = ForegroundColor;
+
+            Console.SetCursorPosition(Left + 1, Top + 1);
+            Console.Write(Text.PadRight(Width));
+        }
+
+        public string Input() {
+            Console.SetCursorPosition(Left + 1, Top + 1);
+            Console.BackgroundColor = BackgroundColor;
+            Console.ForegroundColor = ForegroundColor;
+            Text = Console.ReadLine();
+            return Text;
+        }
+
+        private void drawBorder() {
             Console.BackgroundColor = BackgroundColor;
             Console.ForegroundColor = ForegroundColor;
 
@@ -32,9 +49,6 @@ namespace op18.UIComponents {
             for (int i = 0; i < Width + 2; i++) {
                 Console.Write("═");
             }
-
-            Console.SetCursorPosition(Left + 1, Top + 1);
-            Console.Write(Text.PadRight(Width));
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace op15.ConsoleApplication {
-    public class Bank {
+    public class Bank : Object {
         public Bank(string name) {
             Name = name;
         }

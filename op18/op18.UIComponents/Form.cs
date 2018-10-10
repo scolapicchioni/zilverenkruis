@@ -9,6 +9,8 @@ namespace op18.UIComponents {
             Controls = new Control[50];
         }
         public void Draw() {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.Clear();
             for (int i = 0; i < Controls.Length; i++) {
                 if (Controls[i] != null)
                     Controls[i].Draw();
