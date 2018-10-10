@@ -1,18 +1,15 @@
 ﻿# UI Components
 
-A **Form** has a collection of **Control**.
-
-When you ***Draw*** a Form, the form scrolls through all its controls and invokes the ***Draw*** of each control.
-
-A **Control** has a **Top**, **Left**, **Witdh**, **Height**, **BackgroundColor**, **ForegroundColor** and it can ***Draw***.
-
-There are two types of controls: **Label** and **TextBox**.
-
-The ***Draw*** of a **Label** draws a single border around the text.
-
-The ***Draw*** of a **TextBox** draws a double border around the text.
-
-A **TextBox** also has an ***Input*** method, that positions the Console cursor at the beginning of the textbox, waits for the user to type and returns the user input.
+- Create a Console Application 
+- Makes an instance of a **FORM**
+- Make two instances of **LABEL**
+- Make an instance of a **TEXTBOX**
+- Add the three controls to the form
+- Setup the controls to position them on the screen
+- Draw the form
+- Invoke the Input of the textbox
+- Change the Text of the second label to "Hello " + the input
+- Draw the form once again
 
 ```
 
