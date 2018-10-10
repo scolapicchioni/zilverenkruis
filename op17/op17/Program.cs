@@ -59,27 +59,30 @@ namespace op17 {
             //Student student3 = (Student)CreateSomething(2); //new Student()
 
 
-            //Person p = new Person("Mario", "Super");
-            Person p = new Person();
+            Person p = new Person("Mario", "Super");
 
-            Student student = new Student("Princess", "Peach");
+            Console.WriteLine(p);
 
+            //Person p = new Person();
+            
+            Student student = new Student("Princess", "Peach", "SuperMarioGalaxy");
 
+            Console.WriteLine(student);
 
             Console.ReadLine();
         }
 
-        static Person CreateSomething(int what) {
-            if (what == 1) {
-                Person p = new Person();
-                return p;
-            } else if (what == 2) {
-                Student s = new Student();
-                return s;
-            } else {
-                return new Teacher();
-            }
-        }
+        //static Person CreateSomething(int what) {
+        //    if (what == 1) {
+        //        Person p = new Person();
+        //        return p;
+        //    } else if (what == 2) {
+        //        Student s = new Student();
+        //        return s;
+        //    } else {
+        //        return new Teacher();
+        //    }
+        //}
 
 
         static void PrintPersonData(Person person) {

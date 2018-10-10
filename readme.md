@@ -215,13 +215,13 @@ https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29646
 ### Concepts:
 
 - Object Orientation
-    - Abstract classes and methods (`abstract`)
+    - Abstract classes and methods (`abstract`, `override`)
 
 ### Study Material:
 - https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
-    - Part 2 - Chapter 11
+    - Part 2 - Chapter 13
 - https://bookboon.com/en/object-oriented-programming-using-c-sharp-ebook
-    - Chapter 03
+    - Chapter 3.8
 
 ### Excercises:
 -  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx

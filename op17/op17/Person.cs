@@ -22,5 +22,8 @@ namespace op17 {
             return $"Hi, my name is {Name} {Surname}";
         }
 
+        public override string ToString() {
+            return $"{Name} {Surname}";
+        }
     }
 }

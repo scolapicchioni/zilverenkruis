@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\op18.UIComponents\op18.UIComponents.csproj" />
+  </ItemGroup>
+
 </Project>

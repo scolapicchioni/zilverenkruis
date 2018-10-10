@@ -19,9 +19,13 @@ namespace op17 {
             Console.WriteLine("DEFAULT Constructor of a new Student");
         }
 
-        public Student(string surname, string address) : base("", surname) {
+        public Student(string surname, string name, string address) : base(name, surname) {
             Console.WriteLine("Constructor with 2 params of a new Student");
             Address = address;
+        }
+
+        public override string ToString() {
+            return $"{StudentId} - {Name} {Surname}";
         }
     }
 }
