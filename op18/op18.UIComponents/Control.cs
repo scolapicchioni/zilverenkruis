@@ -22,10 +22,7 @@ namespace op18.UIComponents {
             Text = "";
         }
         public virtual void Draw() {
-            Console.SetCursorPosition(Left, Top);
-            Console.BackgroundColor = BackgroundColor;
-            Console.ForegroundColor = ForegroundColor;
-            Console.WriteLine(Text);
+            
         }
     }
 }
