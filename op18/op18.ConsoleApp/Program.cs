@@ -17,7 +17,8 @@ namespace op18.ConsoleApp {
              */
 
             MainForm mainForm = new MainForm();
-            
+
+            //Control c = new Control();
 
             Console.ReadLine();
         }

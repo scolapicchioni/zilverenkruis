@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace op18.UIComponents {
-    public class Control {
+    public abstract class Control {
         public int Top { get; set; }
         public int Left { get; set; }
         public int Width { get; set; }
@@ -21,8 +21,6 @@ namespace op18.UIComponents {
             Width = 10;
             Text = "";
         }
-        public virtual void Draw() {
-            
-        }
+        public abstract void Draw();
     }
 }

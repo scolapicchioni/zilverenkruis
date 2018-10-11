@@ -295,16 +295,22 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 
 - Object Orientation
     - Abstract classes and methods (`abstract`, `override`)
+    - Interfaces (`interface`)
+    - Enumerations (`enum`)
 
 ### Study Material:
 - https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
     - Part 2 - Chapter 13
+    - Part 2 - Chapter 14
+    - Part 2 - Chapter 18
 - https://bookboon.com/en/object-oriented-programming-using-c-sharp-ebook
     - Chapter 3.8
+    - Chapter 4.5
 
 ### Excercises:
 -  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx
 - https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-7-more-on-classes.aspx
+- Implement Rock - Paper - Scissor
 
 ## Resources
 
