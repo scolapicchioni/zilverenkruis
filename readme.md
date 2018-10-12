@@ -312,6 +312,31 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 - https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-7-more-on-classes.aspx
 - Implement Rock - Paper - Scissor
 
+## Day 9 (12/10/2018)
+
+### Concepts:
+
+- Value Types Structures (`struct`) vs Reference Types Classes (`class`)
+- Static members vs Instance members (`static`)
+- Switch (`switch`) and For Each (`foreach`)
+- Comparing objects (`==`)
+- Namespaces (`namespace`)
+- Indexers (`this[index] {get;set;}`)
+
+### Study Material:
+- https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
+    - Part 1 - Chapter 5 (Page 47)
+    - Part 2 - Chapter 19
+
+- http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
+    - Chapter 10.5
+    - Chapter 13.5
+
+### Excercises:
+-  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx
+- https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-7-more-on-classes.aspx
+
+
 ## Resources
 
 - https://repl.it/
