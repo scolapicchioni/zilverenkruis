@@ -11,6 +11,6 @@ namespace op20.ConsoleApp {
     }
 
     public enum Choice {
-        Rock,Paper,Scissors
+        Rock = 1,Paper,Scissors
     }
 }

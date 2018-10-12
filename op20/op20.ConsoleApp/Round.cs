@@ -1,10 +1,10 @@
 ﻿namespace op20.ConsoleApp {
-    internal class Turn {
+    internal class Round {
         IPlayer player1;
         IPlayer player2;
         public IPlayer Winner { get; private set; }
 
-        internal Turn(IPlayer p1, IPlayer p2) {
+        internal Round(IPlayer p1, IPlayer p2) {
             player1 = p1;
             player2 = p2;
         }
@@ -25,9 +25,11 @@
                 { 1, 2, 0 }
             };
             IPlayer winner = null;
-            if (combinations[(int)player2.LastChoice, (int)player1.LastChoice] == 0) {
+            int p1Choice = (int)player1.LastChoice - 1;
+            int p2Choice = (int)player2.LastChoice - 1;
+            if (combinations[p2Choice, p1Choice] == 0) {
                 winner = null;
-            } else if (combinations[(int)player2.LastChoice, (int)player1.LastChoice] == 1) {
+            } else if (combinations[p2Choice, p1Choice] == 1) {
                 winner = player1;
             } else {
                 winner = player2;

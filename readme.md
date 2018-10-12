@@ -321,7 +321,7 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 - Switch (`switch`) and For Each (`foreach`)
 - Comparing objects (`==`)
 - Namespaces (`namespace`)
-- Indexers (`this[index] {get;set;}`)
+
 
 ### Study Material:
 - https://bookboon.com/en/c-1-introduction-to-programming-and-the-c-language-ebook
@@ -331,6 +331,10 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 - http://www.rigwit.co.uk/think/sharp/thinksharp.pdf
     - Chapter 10.5
     - Chapter 13.5
+
+### Evaluation Form:
+
+- https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29650
 
 ### Excercises:
 -  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx

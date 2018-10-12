@@ -17,15 +17,15 @@ namespace op20.ConsoleApp {
             bool playAgain;
             do {
                 Console.Clear();
-                Turn newTurn = new Turn(Player1, Player2);
+                Round newRound = new Round(Player1, Player2);
                 NumberOfTurns++;
-                newTurn.Play();
+                newRound.Play();
                 System.Console.WriteLine($"{Player1.Name} chose {Player1.LastChoice}");
                 System.Console.WriteLine($"{Player2.Name} chose {Player2.LastChoice}");
-                if (newTurn.Winner == null) {
+                if (newRound.Winner == null) {
                     Console.WriteLine("TIE");
                 } else {
-                    Console.WriteLine(newTurn.Winner.Name + " won!");
+                    Console.WriteLine(newRound.Winner.Name + " won!");
                 }
                 writeStats();
                 Console.WriteLine("Continue (y/n)?");

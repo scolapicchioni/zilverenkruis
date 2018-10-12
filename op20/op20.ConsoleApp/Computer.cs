@@ -12,7 +12,7 @@ namespace op20.ConsoleApp {
             Name = "Computer";
         }
         public void Play() {
-            LastChoice = (Choice)generator.Next(0,3);
+            LastChoice = (Choice)generator.Next(1,4);
         }
     }
 }

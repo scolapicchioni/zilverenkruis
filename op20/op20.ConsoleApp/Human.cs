@@ -13,12 +13,18 @@ namespace op20.ConsoleApp {
         public void Play() {
             bool ok = false;
             do {
-                Console.WriteLine($"{Name}, please select 1 for Rock, 2 for Paper, 3 for Scissors");
+                int[] values = (int[])Enum.GetValues(typeof(Choice));
+                string[] names = Enum.GetNames(typeof(Choice));
+                string message = "Please select:\n";
+                for (int i = 0; i < values.Length; i++) {
+                    message += $"\t{values[i]} for {names[i]}\n";
+                }
+                Console.WriteLine($"{Name}, {message}");
                 try {
                     int choice = int.Parse(Console.ReadLine());
-                    if (choice >= 1 && choice <= 3) {
+                    if(Enum.IsDefined(typeof(Choice), choice)) { 
                         ok = true;
-                        LastChoice = (Choice)(choice - 1);
+                        LastChoice = (Choice)choice;
                     }
                 } catch {
                 }

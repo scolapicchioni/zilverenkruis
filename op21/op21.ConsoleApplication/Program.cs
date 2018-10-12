@@ -3,15 +3,13 @@
 namespace op21.ConsoleApplication {
     class Program {
         static void Main(string[] args) {
-            
-
             //Console.BackgroundColor = ConsoleColor.Red;
 
             ConsoleColor myFavoriteColor = ConsoleColor.White;
 
-            Stuff(myFavoriteColor);
+            Method(myFavoriteColor);
 
-            Stuff(ConsoleColor.Magenta);
+            Method(ConsoleColor.Magenta);
 
             Settings settings = new Settings();
             settings.Color = ConsoleColor.Cyan;
@@ -51,8 +49,8 @@ namespace op21.ConsoleApplication {
             Console.ReadLine();
         }
 
-        static void Stuff(ConsoleColor color) {
-
+        static void Method(ConsoleColor color) {
+            Console.WriteLine(color);
         }
     }
 
