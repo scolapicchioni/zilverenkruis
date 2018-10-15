@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace op23.BusinessLogic {
+namespace op23.BusinessLogic.Utilities {
     public class List<TheTypeOfTheItemToStore> { //generic
         public List() {
             recipes = new TheTypeOfTheItemToStore[200];
