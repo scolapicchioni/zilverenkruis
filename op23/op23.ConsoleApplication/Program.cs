@@ -1,26 +1,39 @@
-﻿using op23.BusinessLogic;
+﻿
+using op23.BusinessLogic;
 using System;
 
 namespace op23.ConsoleApplication {
     class Program {
         static void Main(string[] args) {
-            RecipesBook book = new RecipesBook();
-            Console.WriteLine(book.Recipes.Count);
 
-            Recipe r = new Recipe();
-            r.Ingredients.Add(new Ingredient() { Name = "", Quantity = "" });
+            Ingredient pasta = new Ingredient() { Name = "fusilli", Quantity = "250 gr" };
+            Ingredient eggs = new Ingredient() { Name = "eggs", Quantity = "3" };
+            Ingredient parmesan = new Ingredient() { Name = "parmesan", Quantity = "50 gr" };
 
-            book.Recipes.Add(r);
+            Recipe carbonara = new Recipe() {
+                Title = "Pasta alla carbonara",
+                Description = "fghjdskhgdjkgf",
+                Difficulty = Difficulty.Easy,
+                Duration = 10
+            };
 
-            Console.WriteLine(book.Recipes.Get(0).Title);
+            carbonara.Ingredients.Add(pasta);
+            carbonara.Ingredients.Add(eggs);
+            carbonara.Ingredients.Add(parmesan);
 
-            //r.Ingredients.Add(new Recipe());
+            for (int i = 0; i < carbonara.Ingredients.Count; i++) {
+                Console.WriteLine($"{carbonara.Ingredients[i].Name} {carbonara.Ingredients[i].Quantity}");
+            }
+            
+            CookBook book = new CookBook() { Title = "Simona's cooking for Dutch people", Author = "Simona" };
 
-            ListOfBookItem l = new ListOfBookItem();
-            l.Add(new Recipe());
-            l.Add(new Ingredient());
+            book.Recipes.Add(carbonara);
 
-
+            Console.WriteLine("************************");
+            for (int i = 0; i < book.Recipes.Count; i++) {
+                Console.WriteLine($"{book.Recipes[i].Title}");
+            }
+            
             Console.ReadLine();
         }
     }

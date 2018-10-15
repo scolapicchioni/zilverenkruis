@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace op23.BusinessLogic {
-    public class Recipe: BookItem {
+    public class Recipe {
         public string Title { get; set; }
         public int Duration { get; set; }
+        //carbonara.Description
+        public string Description { get; set; }
         public Difficulty Difficulty { get; set; }
-        public ListOfIngredients Ingredients { get; private set; }
+        public List<Ingredient> Ingredients { get; private set; }
         public Recipe() {
-            Ingredients = new ListOfIngredients();
+            Ingredients = new List<Ingredient>();
         }
+        
     }
 
     public enum Difficulty {
-        Easy, Medium, Expert
+        Easy, Medium, Advanced
     }
 }

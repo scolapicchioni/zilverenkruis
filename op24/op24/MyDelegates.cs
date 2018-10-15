@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace op23.BusinessLogic {
-    public class BookItem {
-
-    }
+namespace op24 {
+    public delegate bool MovieChecker(Movie movie);
 }

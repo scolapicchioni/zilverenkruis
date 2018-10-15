@@ -332,6 +332,23 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
     - Chapter 10.5
     - Chapter 13.5
 
+## Day 10 (15/10/2018)
+
+### Concepts:
+
+- Indexers (`this[]`)
+- Generics (`<type>`)
+- Delegates (`delegate`)
+- Lambda Expressions (`param => statement`)
+
+
+### Study Material:
+- http://csharpindepth.com/Articles/Chapter2/Events.aspx
+- https://www.akadia.com/services/dotnet_delegates_and_events.html
+- https://docs.microsoft.com/en-us/dotnet/standard/delegates-lambdas
+- https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
+- https://www.c-sharpcorner.com/article/overview-of-delegates-anonymous-method-and-lambda-expression-in-c-sharp/
+
 ### Evaluation Form:
 
 - https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29650
