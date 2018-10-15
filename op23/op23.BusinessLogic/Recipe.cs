@@ -9,9 +9,9 @@ namespace op23.BusinessLogic {
         //carbonara.Description
         public string Description { get; set; }
         public Difficulty Difficulty { get; set; }
-        public List<Ingredient> Ingredients { get; private set; }
+        public Ingredients Ingredients { get; private set; }
         public Recipe() {
-            Ingredients = new List<Ingredient>();
+            Ingredients = new Ingredients();
         }
         
     }

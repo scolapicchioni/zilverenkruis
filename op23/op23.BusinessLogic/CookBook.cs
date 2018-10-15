@@ -7,9 +7,9 @@ namespace op23.BusinessLogic {
         public string Title { get; set; }
         public string Author { get; set; }
 
-        public List<Recipe> Recipes { get; private set; }
+        public Recipes Recipes { get; private set; }
         public CookBook() {
-            Recipes = new List<Recipe>();
+            Recipes = new Recipes();
         }
         
     }
