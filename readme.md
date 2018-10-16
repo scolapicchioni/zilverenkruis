@@ -349,6 +349,12 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions
 - https://www.c-sharpcorner.com/article/overview-of-delegates-anonymous-method-and-lambda-expression-in-c-sharp/
 
+## Day 11 (16/10/2018)
+
+### Practice
+
+> As a user I want to bring two phones to the TechSupport so that they Copy the Contacts from one Phone to the other 
+
 ### Evaluation Form:
 
 - https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29650
