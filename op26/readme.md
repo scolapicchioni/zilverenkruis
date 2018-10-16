@@ -13,7 +13,7 @@
   - The source contacts should be added to the existing contacts
 - The target phone may already have a contacts present in the source phone
   - The target phone should then hold both the contacts without mergin them
- 
+- After having copied the contacts, changing a contact property in one of the phones should not affect the contacts in the other phone
 ## Classes
 
 - `Contact`
