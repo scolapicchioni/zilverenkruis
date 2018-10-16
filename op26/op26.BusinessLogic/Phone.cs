@@ -6,9 +6,9 @@ namespace op26.BusinessLogic {
     public class Phone {
         public string Brand { get; set; }
         public string Model { get; set; }
-        public List<Contact> Contacts {get; private set;}
+        public Contacts Contacts {get; private set;}
         public Phone() {
-            Contacts = new List<Contact>();
+            Contacts = new Contacts();
         }
     }
 }

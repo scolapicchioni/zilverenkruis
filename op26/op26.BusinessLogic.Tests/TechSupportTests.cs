@@ -69,5 +69,57 @@ namespace op26.BusinessLogic.Tests {
                     Assert.Equal(s3, item);
                 });
         }
+
+        [Fact]
+        public void GivenNewTechSupportAndSourcePhoneWithAContactAndTargetPhoneWithAContactWithSameNameAndPhoneNumber_WhenCopyingContacts_ThenTargetPhoneShouldHaveTargetPlusSourceContacts() {
+            //GivenNewTechSupport
+            TechSupport techSupport = new TechSupport();
+
+            //AndSourcePhoneWithAContacts
+            Contact s1 = new Contact() { Name = "Mario", Surname = "Super", PhoneNumber = "06123123" };
+            
+            Phone source = new Phone() { Brand = "Source", Model = "Phone" };
+            source.Contacts.Add(s1);
+
+            //AndTargetPhoneWith2Contacts
+            Phone target = new Phone() { Brand = "Target", Model = "Phone" };
+
+            Contact t1 = new Contact() { Name = "Mario", Surname = "Super", PhoneNumber = "06123123" };
+
+            target.Contacts.Add(t1);
+
+            //WhenCopyingContacts
+            techSupport.CopyContacts(source, target);
+
+            //ThenTargetPhoneShouldHaveTargetPlusSourceContacts
+            Assert.Collection(target.Contacts,
+                item => {
+                    Assert.Equal(t1, item);
+                },
+                item => {
+                    Assert.Equal(s1, item);
+                });
+        }
+
+        [Fact]
+        public void GivenNewTechSupportAndSourcePhoneWithAContactAndTargetPhoneWithNoContact_WhenCopyingContacts_ThenContactInTargetShouldNotBeSameReference() {
+            //GivenNewTechSupport
+            TechSupport techSupport = new TechSupport();
+
+            //AndSourcePhoneWithAContact
+            Contact s1 = new Contact() { Name = "Mario", Surname = "Super", PhoneNumber = "06123123" };
+
+            Phone source = new Phone() { Brand = "Source", Model = "Phone" };
+            source.Contacts.Add(s1);
+
+            //AndTargetPhoneWithNoContact
+            Phone target = new Phone() { Brand = "Target", Model = "Phone" };
+
+            //WhenCopyingContacts
+            techSupport.CopyContacts(source, target);
+
+            //ThenContactInTargetShouldNotBeSameReference
+            Assert.NotSame(s1, target.Contacts[0]);
+        }
     }
 }
