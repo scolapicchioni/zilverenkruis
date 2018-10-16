@@ -54,19 +54,29 @@ namespace op26.BusinessLogic.Tests {
             //ThenTargetPhoneShouldHaveTargetPlusSourceContacts
             Assert.Collection(target.Contacts,
                 item => {
-                    Assert.Equal(t1, item);
+                    Assert.Equal(t1.Name, item.Name);
+                    Assert.Equal(t1.Surname, item.Surname);
+                    Assert.Equal(t1.PhoneNumber, item.PhoneNumber);
                 },
                 item => {
-                    Assert.Equal(t2, item);
+                    Assert.Equal(t2.Name, item.Name);
+                    Assert.Equal(t2.Surname, item.Surname);
+                    Assert.Equal(t2.PhoneNumber, item.PhoneNumber);
                 },
                 item => {
-                    Assert.Equal(s1, item);
+                    Assert.Equal(s1.Name, item.Name);
+                    Assert.Equal(s1.Surname, item.Surname);
+                    Assert.Equal(s1.PhoneNumber, item.PhoneNumber);
                 },
                 item => {
-                    Assert.Equal(s2, item);
+                    Assert.Equal(s2.Name, item.Name);
+                    Assert.Equal(s2.Surname, item.Surname);
+                    Assert.Equal(s2.PhoneNumber, item.PhoneNumber);
                 },
                 item => {
-                    Assert.Equal(s3, item);
+                    Assert.Equal(s3.Name, item.Name);
+                    Assert.Equal(s3.Surname, item.Surname);
+                    Assert.Equal(s3.PhoneNumber, item.PhoneNumber);
                 });
         }
 
@@ -94,10 +104,14 @@ namespace op26.BusinessLogic.Tests {
             //ThenTargetPhoneShouldHaveTargetPlusSourceContacts
             Assert.Collection(target.Contacts,
                 item => {
-                    Assert.Equal(t1, item);
+                    Assert.Equal(t1.Name, item.Name);
+                    Assert.Equal(t1.Surname, item.Surname);
+                    Assert.Equal(t1.PhoneNumber, item.PhoneNumber);
                 },
                 item => {
-                    Assert.Equal(s1, item);
+                    Assert.Equal(s1.Name, item.Name);
+                    Assert.Equal(s1.Surname, item.Surname);
+                    Assert.Equal(s1.PhoneNumber, item.PhoneNumber);
                 });
         }
 

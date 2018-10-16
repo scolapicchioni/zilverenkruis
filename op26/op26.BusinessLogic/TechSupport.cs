@@ -7,6 +7,7 @@ namespace op26.BusinessLogic {
         public void CopyContacts(Phone source, Phone target) {
             foreach (Contact item in source.Contacts) {
                 target.Contacts.Add(item.Name, item.Surname, item.PhoneNumber);
+                //target.Contacts.Add(item);
             }
         }
     }
