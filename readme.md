@@ -353,7 +353,8 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 
 ### Practice
 
-> As a user I want to bring two phones to the TechSupport so that they Copy the Contacts from one Phone to the other 
+- As a user I want to bring two phones to the TechSupport so that they Copy the Contacts from one Phone to the other 
+- As a user, I want to use the phone to Add, Subtract, Multiply and Divide two numbers
 
 ### Evaluation Form:
 
