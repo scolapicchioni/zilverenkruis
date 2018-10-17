@@ -357,6 +357,12 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 - As a user, I want to use the phone to Add, Subtract, Multiply and Divide two numbers
 - As a user, I want to be able to install new Apps
 
+## Day 12 (17/10/2018)
+
+### Practice
+
+- As a user, I want to be able to install new Apps
+- Build a console application that interacts with the user to use the phone and its apps 
 
 ### Evaluation Form:
 
