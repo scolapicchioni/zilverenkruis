@@ -4,21 +4,15 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace op28.ConsoleApp {
-    public class CalculatorPresenter : IAppPresenter{
-        public CalculatorPresenter(Phone phone) {
-            Phone = phone;
-            Calc = Phone.AppDrawer.Find<Calculator>();
-            Name = Calc.Name;
+    public class CalculatorPresenter : AppPresenter<Calculator>{
+        public CalculatorPresenter(Phone phone) : base(phone){
         }
-        public string Name { get; set; }
-        public Phone Phone { get; }
-        Calculator Calc { get; }
-
+        
         private int askNumber(string message) {
             int number=0;
             bool ok = false;
             do {
-                Console.Write(message);
+                Console.Write($"{message}: ");
                 try {
                     number = int.Parse(Console.ReadLine());
                     ok = true;
@@ -28,7 +22,7 @@ namespace op28.ConsoleApp {
             return number;
         }
 
-        public void Start() {
+        public override void Start() {
             string input; 
             do {
                 Console.Clear();
@@ -60,7 +54,7 @@ namespace op28.ConsoleApp {
             int n1 = askNumber("Please insert the first number to add");
             int n2 = askNumber("Please insert the second number to add");
 
-            Console.WriteLine(Calc.Add(n1, n2));
+            Console.WriteLine(App.Add(n1, n2));
             Console.ReadLine();
         }
 
@@ -68,7 +62,7 @@ namespace op28.ConsoleApp {
             int n1 = askNumber("Please insert the first number to subtract");
             int n2 = askNumber("Please insert the second number to subtract");
 
-            Console.WriteLine(Calc.Subtract(n1, n2));
+            Console.WriteLine(App.Subtract(n1, n2));
             Console.ReadLine();
         }
 
@@ -76,7 +70,7 @@ namespace op28.ConsoleApp {
             int n1 = askNumber("Please insert the first number to multiply");
             int n2 = askNumber("Please insert the second number to multiply");
 
-            Console.WriteLine(Calc.Multiply(n1, n2));
+            Console.WriteLine(App.Multiply(n1, n2));
             Console.ReadLine();
         }
 
@@ -84,7 +78,7 @@ namespace op28.ConsoleApp {
             int n1 = askNumber("Please insert the first number to divide");
             int n2 = askNumber("Please insert the second number to divide");
 
-            Console.WriteLine(Calc.Divide(n1, n2));
+            Console.WriteLine(App.Divide(n1, n2));
             Console.ReadLine();
         }
     }
