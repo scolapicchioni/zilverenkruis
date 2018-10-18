@@ -4,12 +4,14 @@ using System;
 namespace op28.ConsoleApp {
     class Program {
         static void Main(string[] args) {
-            Phone p = new Phone() { Brand = "Lenovo", Model = "P2" };
-            p.AppDrawer.Install(new Calculator());
-            p.AppDrawer.Install(new ContactsApp());
+            Phone phone = new Phone() { Brand = "Lenovo", Model = "P2" };
+            phone.AppDrawer.Install(new Calculator());
+            phone.AppDrawer.Install(new ContactsApp());
 
-            PhonePresenter pp = new PhonePresenter(p);
-            pp.Start();
+            PhonePresenter phonePresenter = new PhonePresenter(phone);
+            phonePresenter.Presenters.Add(new CalculatorPresenter(phone));
+            phonePresenter.Presenters.Add(new ContactsAppPresenter(phone));
+            phonePresenter.Start();
             
             Console.ReadLine();
         }
