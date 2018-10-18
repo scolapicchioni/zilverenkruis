@@ -368,9 +368,50 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 
 - https://mtm.cebglobal.com/student/evaluation.asp?k=1070&i=29650
 
-### Excercises:
--  https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-6-object-oriented-programming.aspx
-- https://www.juanantonioripoll.es/practice-exercises-c-sharp/practice-exercises-c-sharp-lesson-7-more-on-classes.aspx
+## Day 13 (18/10/2018)
+
+### Concepts:
+- What is .NET
+- What is .NET Standard
+- What is .NET Framework
+- What is .NET Core
+- System.IO Namespace
+    - File
+    - Streams
+- Serialization
+    - Binary
+    - XML
+    - JSON
+- Classes
+    - System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+    - System.Xml.Serialization.XmlSerializer
+- NuGet Packages
+    - NewtonSoft JSON
+    - JsonSerializer
+- System.Collections.Generic Namespace
+    - List<T>
+    - Dictionary<K,V>
+- System.Linq Namespace
+
+ 
+
+
+### Study Material:
+- https://docs.microsoft.com/en-gb/dotnet/
+- https://www.microsoft.com/net/learn/dotnet/what-is-dotnet
+- https://docs.microsoft.com/en-us/dotnet/standard/
+- https://docs.microsoft.com/en-gb/dotnet/api/
+- https://docs.microsoft.com/en-gb/dotnet/api/system.collections.generic?view=netstandard-2.0
+- https://docs.microsoft.com/en-gb/dotnet/api/system.io?view=netstandard-2.0
+- https://docs.microsoft.com/en-gb/dotnet/standard/io/common-i-o-tasks?view=netstandard-2.0
+- https://www.newtonsoft.com/json/help/html/Introduction.htm
+- https://docs.microsoft.com/en-gb/dotnet/api/system.linq?view=netstandard-2.0
+- https://www.red-gate.com/simple-talk/dotnet/net-development/visual-lexicon-linq/
+- https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/
+- https://linqsamples.com/
+- https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/
+- https://docs.microsoft.com/en-us/dotnet/standard/using-linq
+- https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b
 
 
 ## Resources
