@@ -411,6 +411,7 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 
 ### Concepts:
 - What is a DataBase
+- What is a Relational DataBase
     - What is Table
     - What is a Row
     - What is a Column
