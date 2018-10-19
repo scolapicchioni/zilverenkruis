@@ -406,13 +406,34 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 - https://docs.microsoft.com/en-gb/dotnet/standard/io/common-i-o-tasks?view=netstandard-2.0
 - https://www.newtonsoft.com/json/help/html/Introduction.htm
 - https://docs.microsoft.com/en-gb/dotnet/api/system.linq?view=netstandard-2.0
+
+## Day 14 (19/10/2018)
+
+### Concepts:
+- What is a DataBase
+    - What is Table
+    - What is a Row
+    - What is a Column
+    - What is a Key
+    - What is a 1 to 1 relationship
+    - What is a Many to Many relationship
+    - What is a Query
+        - SELECT
+        - INSERT
+        - UPDATE
+        - DELETE
+- Linq
+- Entity Framework
+
+### Study Material:
+- https://docs.microsoft.com/en-gb/dotnet/api/system.linq?view=netstandard-2.0
 - https://www.red-gate.com/simple-talk/dotnet/net-development/visual-lexicon-linq/
 - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/
 - https://linqsamples.com/
 - https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/
 - https://docs.microsoft.com/en-us/dotnet/standard/using-linq
 - https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b
-
+- https://docs.microsoft.com/en-us/ef/core/
 
 ## Resources
 
