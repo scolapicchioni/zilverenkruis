@@ -13,5 +13,9 @@ namespace DataHelper
         public DateTime BirthDate { get; set; }
         public char Gender { get; set; }
         public int SickLeaveHours { get; set; }
+
+        public override string ToString() {
+            return $"{ID} {Name} {Manager} {BirthDate} {Gender} {SickLeaveHours}";
+        }
     }
 }
