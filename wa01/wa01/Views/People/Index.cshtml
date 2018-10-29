@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Person>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>People</title>
+</head>
+<body>
+    <a asp-action="Create" asp-controller="People">Insert New Person</a>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Surname
+                </th>
+                <th>
+                    Age
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id">@item.Id</a>
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Surname
+                    </td>
+                    <td>
+                        @item.Age
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
