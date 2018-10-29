@@ -451,6 +451,27 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 - https://www.youtube.com/watch?v=BSaAMQVq01E
 
 
+## Day 1 MVC
+
+### Concepts:
+- http protocol
+    - client
+    - server
+    - request
+    - response 
+- Model / View / Controller (MVC) Design Pattern
+- ASP.NET Core MVC
+    - WebHost
+    - Startup
+    - Route
+    - Controller
+    - Action
+    - Model
+    - View
+
+### Study Material:
+- https://docs.microsoft.com/en-gb/aspnet/core/?view=aspnetcore-2.1
+
 | Training | Datum | Trainer |
 | ----------|--------|--------------|
 Introductie programmeren in C# | 2 tot en met 5 oktober 2018 | Simona Colapicchioni
