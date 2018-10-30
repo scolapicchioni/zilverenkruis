@@ -30,5 +30,35 @@ namespace wa01.Controllers{
                 return View();
             }
         }
+
+        public IActionResult Update(int id) {
+            Person person = repo.GetPersonById(id);
+            if (person == null) {
+                return NotFound();
+            }
+            return View(person);
+        }
+        [HttpPost]
+        public IActionResult Update(Person person) {
+            if (ModelState.IsValid) {
+                repo.Update(person);
+                return RedirectToAction(nameof(Index));
+            } else {
+                return View();
+            }
+        }
+
+        public IActionResult Delete(int id) {
+            Person person = repo.GetPersonById(id);
+            if (person == null) {
+                return NotFound();
+            }
+            return View(person);
+        }
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id) {
+            repo.Delete(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

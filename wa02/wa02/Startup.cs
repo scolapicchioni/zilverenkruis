@@ -10,9 +10,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using wa01.Models;
+using wa02.Models;
 
-namespace wa01 {
+namespace wa02 {
     public class Startup {
         public Startup(IConfiguration configuration) {
             Configuration = configuration;
@@ -31,11 +31,10 @@ namespace wa01 {
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-    services.AddDbContext<ApplicationContext>(options =>
+            services.AddDbContext<ApplicationContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("ApplicationContext")));
 
-            services.AddScoped<IPeopleRepository, PeopleEFRepository>();
-
+            services.AddScoped<IMoviesRepository, MoviesRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

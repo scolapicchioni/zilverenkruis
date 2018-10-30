@@ -1,0 +1,21 @@
+﻿@model Person
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h1>Are you sure you want to delete @Model.Name @Model.Surname?</h1>
+    <form method="post">
+        <input type="submit" value="YES" />
+    </form>
+    <a asp-action="Index" asp-controller="People">NO</a>
+</body>
+</html>
