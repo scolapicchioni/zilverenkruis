@@ -12,11 +12,16 @@ namespace wa02.Models {
             _context = context;
         }
 
-        public async Task<List<Movie>> GetMovies() {
-            return await _context.Movie.ToListAsync();
-        }
+        public async Task<List<Movie>> GetMovies() => 
+            await _context
+                .Movie
+                .OrderBy(m=>m.Title)
+                .ToListAsync();
+        
 
-        public async Task<Movie> GetMovieById(int id) => await _context.Movie
+        public async Task<Movie> GetMovieById(int id) => 
+            await _context
+                .Movie
                 .FirstOrDefaultAsync(m => m.Id == id);
 
         public async Task Insert(Movie movie) {
@@ -43,8 +48,31 @@ namespace wa02.Models {
             await _context.SaveChangesAsync();
         }
 
-        public bool MovieExists(int id) {
-            return _context.Movie.Any(e => e.Id == id);
+        public bool MovieExists(int id) => _context.Movie.Any(e => e.Id == id);
+
+        public async Task<List<Movie>> GetMoviesByGenre(string genre) {
+            return await _context
+                .Movie
+                .Where(m=>m.Genre.ToLower().StartsWith(genre.ToLower()))
+                .OrderBy(m=>m.Title)
+                .ToListAsync();
         }
+
+        public async Task<List<Movie>> GetMoviesByRating(int rating) => 
+            await _context
+                .Movie
+                .Where(m => m.Rating>=rating)
+                .OrderByDescending(m=>m.Rating)
+                .ThenBy(m=>m.Title)
+                .ToListAsync();
+        
+
+        public async Task<List<Movie>> GetMoviesByYear(int year) => 
+            await _context
+                .Movie
+                .Where(m => m.Year == year)
+                .OrderBy(m=>m.Title)
+                .ToListAsync();
+        
     }
 }
