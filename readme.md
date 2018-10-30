@@ -498,6 +498,7 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
     - Entity Framework
 - View
     - TagHelpers
+        - https://techbrij.com/asp-net-core-mvc-enums-select-taghelper
     - Layout
 ### Study Material:
 - https://docs.microsoft.com/en-gb/aspnet/core/?view=aspnetcore-2.1
