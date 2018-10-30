@@ -465,12 +465,43 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
     - Startup
     - Route
     - Controller
-    - Action
+        - Action
+            - Read All
+            - Read One
+            - Create (GET)
+            - Create (POST)
     - Model
     - View
+        - Razor
+        - TagHelpers
+            - asp-action
+            - asp-controller
+            - asp-for
+            - asp-route-
+            - asp-validation-for
 
 ### Study Material:
 - https://docs.microsoft.com/en-gb/aspnet/core/?view=aspnetcore-2.1
+
+## Day 2 MVC
+
+### Concepts:
+- Controller
+    - Action
+        - Update (GET)
+        - Update (POST)
+        - Delete (GET)
+        - Delete (POST)
+    - Repository Pattern
+    - Dependency Injection
+- Model
+    - Entity Framework
+- View
+    - TagHelpers
+    - Layout
+### Study Material:
+- https://docs.microsoft.com/en-gb/aspnet/core/?view=aspnetcore-2.1
+
 
 | Training | Datum | Trainer |
 | ----------|--------|--------------|
