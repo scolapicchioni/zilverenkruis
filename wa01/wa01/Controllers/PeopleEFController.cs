@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using wa01.Models;
@@ -40,6 +41,7 @@ namespace wa01.Controllers
             return View(person);
         }
 
+        [Authorize]
         // GET: PeopleEF/Create
         public IActionResult Create()
         {

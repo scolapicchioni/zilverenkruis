@@ -523,7 +523,8 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 - https://docs.microsoft.com/en-gb/aspnet/core/mvc/controllers/testing?view=aspnetcore-2.1
 - https://docs.microsoft.com/en-gb/aspnet/core/test/integration-tests?view=aspnetcore-2.1
 - https://docs.microsoft.com/en-gb/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1
-
+- https://docs.microsoft.com/en-gb/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-2.1&tabs=visual-studio
+- https://docs.microsoft.com/en-gb/aspnet/core/security/?view=aspnetcore-2.1
 
 | Training | Datum | Trainer |
 | ----------|--------|--------------|
