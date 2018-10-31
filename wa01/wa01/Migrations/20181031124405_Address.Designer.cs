@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using wa02.Models;
+using wa01.Models;
 
-namespace wa02.Migrations
+namespace wa01.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20181031124405_Address")]
+    partial class Address
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -18,53 +20,54 @@ namespace wa02.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("wa02.Models.Comment", b =>
+            modelBuilder.Entity("wa01.Models.Address", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Body");
+                    b.Property<string>("City");
 
-                    b.Property<int>("MovieId");
+                    b.Property<string>("Number");
 
-                    b.Property<string>("Title");
+                    b.Property<int>("PersonId");
 
-                    b.Property<string>("UserName");
+                    b.Property<string>("Province");
+
+                    b.Property<string>("State");
+
+                    b.Property<string>("StreetName");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MovieId");
+                    b.HasIndex("PersonId");
 
-                    b.ToTable("Comment");
+                    b.ToTable("Address");
                 });
 
-            modelBuilder.Entity("wa02.Models.Movie", b =>
+            modelBuilder.Entity("wa01.Models.Person", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Description");
+                    b.Property<int>("Age");
 
-                    b.Property<string>("Genre");
+                    b.Property<string>("Name");
 
-                    b.Property<int>("Rating");
-
-                    b.Property<string>("Title");
-
-                    b.Property<int>("Year");
+                    b.Property<string>("Surname")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movie");
+                    b.ToTable("Person");
                 });
 
-            modelBuilder.Entity("wa02.Models.Comment", b =>
+            modelBuilder.Entity("wa01.Models.Address", b =>
                 {
-                    b.HasOne("wa02.Models.Movie")
-                        .WithMany("Comments")
-                        .HasForeignKey("MovieId")
+                    b.HasOne("wa01.Models.Person")
+                        .WithMany("Addresses")
+                        .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

@@ -510,12 +510,20 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
     - Conventional Routing
     - Attributes Routing
 - Testing
+    - Controller Testing
+    - Moq
 - REST
 - Web API
 - Security
 
 ### Study Material:
 - https://docs.microsoft.com/en-gb/aspnet/core/?view=aspnetcore-2.1
+- https://docs.microsoft.com/en-gb/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.1
+- https://github.com/Moq/moq4/wiki/Quickstart
+- https://docs.microsoft.com/en-gb/aspnet/core/mvc/controllers/testing?view=aspnetcore-2.1
+- https://docs.microsoft.com/en-gb/aspnet/core/test/integration-tests?view=aspnetcore-2.1
+- https://docs.microsoft.com/en-gb/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.1
+
 
 | Training | Datum | Trainer |
 | ----------|--------|--------------|

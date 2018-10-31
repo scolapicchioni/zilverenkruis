@@ -18,6 +18,31 @@ namespace wa01.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("wa01.Models.Address", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("City");
+
+                    b.Property<string>("Number");
+
+                    b.Property<int>("PersonId");
+
+                    b.Property<string>("Province");
+
+                    b.Property<string>("State");
+
+                    b.Property<string>("StreetName");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PersonId");
+
+                    b.ToTable("Address");
+                });
+
             modelBuilder.Entity("wa01.Models.Person", b =>
                 {
                     b.Property<int>("Id")
@@ -34,6 +59,14 @@ namespace wa01.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Person");
+                });
+
+            modelBuilder.Entity("wa01.Models.Address", b =>
+                {
+                    b.HasOne("wa01.Models.Person")
+                        .WithMany("Addresses")
+                        .HasForeignKey("PersonId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

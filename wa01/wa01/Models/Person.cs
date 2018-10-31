@@ -13,5 +13,7 @@ namespace wa01.Models {
         public string Surname { get; set; }
 
         public int Age { get; set; }
+
+        public List<Address> Addresses { get; set; }
     }
 }

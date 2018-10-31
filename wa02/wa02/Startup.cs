@@ -35,6 +35,7 @@ namespace wa02 {
             options.UseSqlServer(Configuration.GetConnectionString("ApplicationContext")));
 
             services.AddScoped<IMoviesRepository, MoviesRepository>();
+            services.AddScoped<ICommentsRepository, CommentsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +50,7 @@ namespace wa02 {
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
 
             app.UseMvc(routes => {
                 routes.MapRoute(

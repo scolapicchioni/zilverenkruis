@@ -24,14 +24,17 @@ namespace wa02.Controllers
             return View(await _context.GetMovies());
         }
 
+        [Route("movies/genre/{genre}")]
         public async Task<IActionResult> GetMoviesByGenre(string genre) {
             return View(nameof(Index), await _context.GetMoviesByGenre(genre));
         }
 
+        [Route("movies/year/{year:int}")]
         public async Task<IActionResult> GetMoviesByYear(int year) {
             return View(nameof(Index), await _context.GetMoviesByYear(year));
         }
 
+        [Route("movies/rating/{rating}")]
         public async Task<IActionResult> GetMoviesByRating(int rating) {
             return View(nameof(Index), await _context.GetMoviesByRating(rating));
         }

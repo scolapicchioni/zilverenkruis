@@ -11,5 +11,6 @@ namespace wa02.Models {
         public string Genre { get; set; }
         public int Year { get; set; }
         public int Rating { get; set; }
+        public List<Comment> Comments { get; set; } 
     }
 }

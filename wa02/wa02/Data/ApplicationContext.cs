@@ -14,5 +14,7 @@ namespace wa02.Models
         }
 
         public DbSet<wa02.Models.Movie> Movie { get; set; }
+        public DbSet<wa02.Models.Comment> Comment { get; set; }
+
     }
 }

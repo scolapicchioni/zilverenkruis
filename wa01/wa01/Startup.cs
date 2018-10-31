@@ -35,7 +35,7 @@ namespace wa01 {
             options.UseSqlServer(Configuration.GetConnectionString("ApplicationContext")));
 
             services.AddScoped<IPeopleRepository, PeopleEFRepository>();
-
+            services.AddScoped<IAddressesRepository, AddressesRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

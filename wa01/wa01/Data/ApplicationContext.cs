@@ -14,5 +14,6 @@ namespace wa01.Models
         }
 
         public DbSet<wa01.Models.Person> Person { get; set; }
+        public DbSet<wa01.Models.Address> Address { get; set; }
     }
 }
