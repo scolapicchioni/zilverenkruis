@@ -503,6 +503,19 @@ A **TextBox** also has an ***Input*** method, that positions the Console cursor 
 ### Study Material:
 - https://docs.microsoft.com/en-gb/aspnet/core/?view=aspnetcore-2.1
 
+## Day 3 MVC
+
+### Concepts:
+- Routing
+    - Conventional Routing
+    - Attributes Routing
+- Testing
+- REST
+- Web API
+- Security
+
+### Study Material:
+- https://docs.microsoft.com/en-gb/aspnet/core/?view=aspnetcore-2.1
 
 | Training | Datum | Trainer |
 | ----------|--------|--------------|

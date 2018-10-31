@@ -65,7 +65,6 @@ namespace wa02.Models {
                 .OrderByDescending(m=>m.Rating)
                 .ThenBy(m=>m.Title)
                 .ToListAsync();
-        
 
         public async Task<List<Movie>> GetMoviesByYear(int year) => 
             await _context

@@ -40,13 +40,13 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                <a href="@Url.Action("GetMoviesByGenre",new { genre=item.Genre})" >@item.Genre</a> 
+                <a asp-action="GetMoviesByGenre" asp-route-genre="@item.Genre">@item.Genre</a> 
             </td>
             <td>
-                <a href="@Url.Action("GetMoviesByYear",new { year=item.Year})">@item.Year</a>
+                <a asp-action="GetMoviesByYear" asp-route-year="@item.Year">@item.Year</a>
             </td>
             <td>
-                <a href="@Url.Action("GetMoviesByRating",new { rating=item.Rating})">@item.Rating</a>
+                <a asp-action="GetMoviesByRating" asp-route-rating="@item.Rating">@item.Rating</a>
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
